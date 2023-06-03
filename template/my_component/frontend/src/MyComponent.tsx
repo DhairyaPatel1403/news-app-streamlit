@@ -5,6 +5,7 @@ import {
   withStreamlitConnection,
 } from "streamlit-component-lib";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import './style.css'
 
 
@@ -35,6 +36,8 @@ const MyComponent = () => {
           </div>
         </div>
     </div>
+
+    <Footer/>
 
 
       
