@@ -1,3 +1,3 @@
 # news-app-streamlit
 
-![Screenshot (112)](https://github.com/DhairyaPatel1403/news-app-streamlit/assets/102598850/a6c59ae9-1c42-4ceb-8381-aa8fdbcf3464)
+![Screenshot (113)](https://github.com/DhairyaPatel1403/news-app-streamlit/assets/102598850/7114b2ae-8828-4482-9969-9ca51ff998c0)
