@@ -6,7 +6,13 @@ import {
 } from "streamlit-component-lib";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import './style.css'
+import Body from "./Body";
+import './style.css';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Second from "./Second";
+
+
 
 
 
@@ -19,30 +25,43 @@ const MyComponent = () => {
 
   useEffect(() => Streamlit.setFrameHeight());
 
+  const props = {
+    args: {
+      name: 'Finance',
+    },
+  };
+  const props2 = {
+    args: {
+      name: 'Tehnology',
+    },
+  };
+
   return (
-    <div className="main">
 
-    <Navbar/>
-    <div className="container">
-        <div className="description">
-            <p> Description for the website </p>
-        </div>
+    <>
+        <Router>
+          <Routes>
+
+          <Route path="/" element={
+            <div className="main">
+              <Navbar/>
+              <Body/>
+              <Footer/>
+            </div>
+          } />
+
+    <Route path="/second" element={<><Second width={0} disabled={false} {...props} /></>}/>
+    <Route path="/second_" element={<><Second width={0} disabled={false} {...props2} /></>}/>
+
+          </Routes>
+        </Router>
+    </>
 
 
-        <div className="buttons">
-          <div className="button-container">
-          <button className="button1"> Finance </button>
-          <button className="button2"> Technology </button>
-          </div>
-        </div>
-    </div>
-
-    <Footer/>
 
 
-      
 
-    </div>
+
   );
 };
 
