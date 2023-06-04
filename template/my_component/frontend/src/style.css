@@ -250,6 +250,15 @@ input:focus{
   width: 50px;
 }
 
+.card-container{
+  margin-top: 200px;
+  width: 85%;
+  align-items: center;
+  margin-left: 200px;
+  overflow: scroll;
+
+}
+
 .card{
   background-color: #e7a140;
   width: 80%;
@@ -257,4 +266,5 @@ input:focus{
   font-family: 'Geologica', sans-serif;
   font-size: 1rem;
   font-weight: 800;
+  padding: 10px;
 }

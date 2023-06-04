@@ -3,9 +3,12 @@ import './style.css'
 
 const Card = () => {
   return (
-    <div className='card'>
-      Example of card
-    </div>
+
+            <div className='card'>
+            Example of card
+            </div>
+
+
   )
 }
 
